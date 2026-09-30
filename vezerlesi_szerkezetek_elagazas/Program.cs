@@ -156,6 +156,17 @@ namespace vezerlesi_szerkezetek_elagazas
 					break;
 			}
 			Console.WriteLine(sjegy);
+
+			// 1. feladat: Kérjünk be egy egész számot a billentyűzetről,
+			//	és ha a szám nagyobb, mint 0, akkor írjuk ki a képernyőre, hogy "A szám pozitív!"!
+			int num1;
+			Console.WriteLine("1. feladat");
+			Console.Write("Adjon meg egy egész számot: ");
+			num1 = Convert.ToInt32(Console.ReadLine());
+			if (num1 > 0)
+			{
+				Console.WriteLine("A szám pozitív!");
+			}
 		}
 	}
 }
