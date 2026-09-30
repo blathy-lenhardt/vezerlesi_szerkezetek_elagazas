@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -189,6 +190,22 @@ namespace vezerlesi_szerkezetek_elagazas
 				x1 = Math.Round(((b * -1 + Math.Sqrt(d)) / 2 * a), 2);
 				x2 = Math.Round(((b * -1 - Math.Sqrt(d)) / 2 * a), 2);
 				Console.WriteLine("x1 = {0}\nx2 = {1}", x1, x2);
+			}
+
+			// 3. feladat: Kérjünk be 2 számot. Írjuk a képernyőre a nagyobbat!
+			int a3, b3;
+			Console.WriteLine("3. feladat");
+			Console.Write("Adjon meg egy számot: ");
+			a3 = Convert.ToInt32(Console.ReadLine());
+			Console.Write("Adjon meg egy számot: ");
+			b3 = Convert.ToInt32(Console.ReadLine());
+			if (a3 > b3)
+			{
+				Console.WriteLine(a3);
+			}
+			else
+			{
+				Console.WriteLine(b3);
 			}
 		}
 	}
