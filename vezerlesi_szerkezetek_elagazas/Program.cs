@@ -223,6 +223,24 @@ namespace vezerlesi_szerkezetek_elagazas
 				c4 = a4 / b4;
 				Console.WriteLine("{0} / {1} = {2}", a4, b4, c4);
 			}
+
+			// 5. feladat: Három tetszőleges számról döntsük el, hogy lehetnek-e egy háromszög oldalai.
+			double a5, b5, c5;
+			Console.WriteLine("5. feladat");
+			Console.Write("Adja meg a háromszög első oldalát: ");
+			a5 = Convert.ToDouble(Console.ReadLine());
+			Console.Write("Adja meg a háromszög második oldalát: ");
+			b5 = Convert.ToDouble(Console.ReadLine());
+			Console.Write("Adja meg a háromszög harmadik oldalát: ");
+			c5 = Convert.ToDouble(Console.ReadLine());
+			if (a5 + b5 > c5 && a5 + c5 > b5 && b5 + c5 > a5)
+			{
+				Console.WriteLine("A háromszög valós.");
+			}
+			else
+			{
+				Console.WriteLine("A háromszög nem valós.");
+			}
 		}
 	}
 }
