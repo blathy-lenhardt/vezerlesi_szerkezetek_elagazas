@@ -53,6 +53,15 @@ namespace vezerlesi_szerkezetek_elagazas
 			 *		utasítás(ok);
 			 *	}
 			 */
+
+			/* 1. PÉLDA:
+			 * Készítsünk egy egyszerű programot, amely bekéri a felhasználó életkorát. Ha nincs 18 írjuk ki, hogy kiskorú!
+			 */
+			Console.Write("Életkor: ");
+			int age = Convert.ToInt32(Console.ReadLine());
+			if (age < 18) {
+				Console.WriteLine("Kiskorú!");
+			}
 		}
 	}
 }
