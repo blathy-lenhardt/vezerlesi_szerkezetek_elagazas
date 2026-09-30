@@ -127,6 +127,35 @@ namespace vezerlesi_szerkezetek_elagazas
 			 *	- break: ezzel jelezzük, hogy az elágazásból ki akarunk lépni
 			 *	- default: lehetséges eseteken kívüli esetet is kezelni szeretnénk
 			 */
+
+			/* 3. PÉLDA
+			 * Egy számmal beírt érdemjegyhez ki szeretnénk írni a szöveges változatát!
+			 */
+			Console.Write("Adja meg az érdemjegyet: ");
+			int jegy = Convert.ToInt32(Console.ReadLine());
+			string sjegy;
+			switch (jegy)
+			{
+				case 1:
+					sjegy = "Elégtelen";
+					break;
+				case 2:
+					sjegy = "Elégséges";
+					break;
+				case 3:
+					sjegy = "Közepes";
+					break;
+				case 4:
+					sjegy = "Jó";
+					break;
+				case 5:
+					sjegy = "Jeles";
+					break;
+				default:
+					sjegy = "Hiba, rossz érték!";
+					break;
+			}
+			Console.WriteLine(sjegy);
 		}
 	}
 }
