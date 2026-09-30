@@ -57,10 +57,26 @@ namespace vezerlesi_szerkezetek_elagazas
 			/* 1. PÉLDA:
 			 * Készítsünk egy egyszerű programot, amely bekéri a felhasználó életkorát. Ha nincs 18 írjuk ki, hogy kiskorú!
 			 */
+
 			Console.Write("Életkor: ");
 			int age = Convert.ToInt32(Console.ReadLine());
 			if (age < 18) {
 				Console.WriteLine("Kiskorú!");
+			}
+
+			/* 2. PÉLDA:
+			 * Készítsünk egy egyszerű programot, amely bekér a felhasználótól egy számot! Döntsük el, hogy páros, vagy páratlan!
+			 */
+
+			Console.Write("Adjon meg egy egész számot: ");
+			int num = Convert.ToInt32(Console.ReadLine());
+			if (num % 2 == 0)
+			{
+				Console.WriteLine("Páros!");
+			}
+			else
+			{
+				Console.WriteLine("Páratlan!");
 			}
 		}
 	}
