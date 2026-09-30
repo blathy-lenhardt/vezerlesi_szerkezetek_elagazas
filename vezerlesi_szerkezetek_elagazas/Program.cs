@@ -167,6 +167,29 @@ namespace vezerlesi_szerkezetek_elagazas
 			{
 				Console.WriteLine("A szám pozitív!");
 			}
+
+			// 2. feladat: Kérjük be a másodfokú egyenlet együtthatóit és számítsuk ki a gyököket 2 tizedes pontossággal!
+			//	Ha a diszkrimináns értéke negatív, írjuk ki a képernyőre: "Nincs megoldás!"!
+			double a, b, c, d, x1, x2;
+			Console.WriteLine("2. feladat");
+			Console.Write("a: ");
+			a = Convert.ToDouble(Console.ReadLine());
+			Console.Write("b: ");
+			b = Convert.ToDouble(Console.ReadLine());
+			Console.Write("c: ");
+			c = Convert.ToDouble(Console.ReadLine());
+
+			d = Math.Pow(b, 2) - 4 * a * c;
+			if (d < 0)
+			{
+				Console.WriteLine("Nincs megoldás!");
+			}
+			else
+			{
+				x1 = Math.Round(((b * -1 + Math.Sqrt(d)) / 2 * a), 2);
+				x2 = Math.Round(((b * -1 - Math.Sqrt(d)) / 2 * a), 2);
+				Console.WriteLine("x1 = {0}\nx2 = {1}", x1, x2);
+			}
 		}
 	}
 }
