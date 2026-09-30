@@ -78,6 +78,55 @@ namespace vezerlesi_szerkezetek_elagazas
 			{
 				Console.WriteLine("Páratlan!");
 			}
+
+			/* TÖBBIRÁNYÚ ELÁGAZÁS
+			 * Ha logikai feltétel akkor utasítás1
+			 * különben Ha logikai feltétel2 akkor utasítás2
+			 * különben Ha logikai feltétel3 akkor utasítás3
+			 * különben utasítás4
+			 * 
+			 * if (logikai feltétel) {
+			 *	utasítás1;
+			 * } else if (logikai feltétel2) {
+			 *	utasítás2;
+			 * } else if (logikai feltétel3) {
+			 *	utasítás3;
+			 * } else {
+			 *	utasítás4;
+			 * }
+			 * 
+			 * Algoritmus:
+			 * Elágazás
+			 *	logikai feltétel1 esetén utasítás1
+			 *	logikai feltétel2 esetén utasítás2
+			 *	logikai feltétel3 esetén utasítás3
+			 *	...
+			 * Elágazás vége
+			 * 
+			 * C#-ban:
+			 *	switch ()
+			 *	{
+			 *		case logikai feltétel1:
+			 *			utasítás1;
+			 *			break;
+			 *		case logikai feltétel2:
+			 *			utasítás2;
+			 *			break;
+			 *		case logikai feltétel3:
+			 *			utasítás3;
+			 *			break;
+			 *		default:
+			 *			alap utasítás;
+			 *			break;
+			 *	}
+			 * 
+			 * Megjegyzés:
+			 *	- switch: melyik változó után történik meg az esetek szétválasztása (egész, karakter, szöveg, logikai, felsorolás)
+			 *	- case: az egyes esetek jelölése
+			 *	- case kulcsszó után megadjuk az utasításokat
+			 *	- break: ezzel jelezzük, hogy az elágazásból ki akarunk lépni
+			 *	- default: lehetséges eseteken kívüli esetet is kezelni szeretnénk
+			 */
 		}
 	}
 }
