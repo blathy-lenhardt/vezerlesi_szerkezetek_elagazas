@@ -207,6 +207,22 @@ namespace vezerlesi_szerkezetek_elagazas
 			{
 				Console.WriteLine(b3);
 			}
+
+			// 4. feladat: Írjuk ki 2 tetszőleges szám hányadosát. (Nullával nem lehet osztani!)
+			int a4, b4, c4;
+			Console.WriteLine("4. feladat");
+			Console.Write("Adjon meg egy számot: ");
+			a4 = Convert.ToInt32(Console.ReadLine());
+			Console.Write("Adjon meg egy számot: ");
+			b4 = Convert.ToInt32(Console.ReadLine());
+			if (b4 == 0)
+			{
+				Console.WriteLine("Nullával nem lehet osztani!");
+			} else
+			{
+				c4 = a4 / b4;
+				Console.WriteLine("{0} / {1} = {2}", a4, b4, c4);
+			}
 		}
 	}
 }
